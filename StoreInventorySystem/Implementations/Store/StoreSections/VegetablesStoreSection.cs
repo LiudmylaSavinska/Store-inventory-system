@@ -10,14 +10,36 @@ public class VegetablesStoreSection : ICountable
     public string SectionName { get; }
     
     public string UnitType { get; }
+    
+    public VegetablesStoreSection()
+    {
+        Products = new List<Product>();
+        UnitType = "kilograms";
+        SectionName = "Vegetables";
+    }
 
     public int CountAmount()
     {
-        throw new NotImplementedException();
+        var amount = 0;
+
+        foreach (var product in Products)
+        {
+            amount += product.Quantity;
+        }
+
+        return amount;
     }
 
     public string PrintAmount()
     {
-        throw new NotImplementedException();
+        
+        var details = string.Empty;
+        
+        foreach (var product in Products)
+        {
+            details += $"{product.Name} {product.Quantity} {UnitType} \n";
+        }
+
+        return details;
     }
 }

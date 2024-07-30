@@ -10,13 +10,34 @@ public class FishStoreSection  : ICountable
     public string SectionName { get; }
     public string UnitType { get; }
     
+    public FishStoreSection()
+    {
+        Products = new List<Product>();
+        UnitType = "kilograms";
+        SectionName = "Fish";
+    }
+    
     public int CountAmount()
     {
-        throw new NotImplementedException();
+        var amount = 0;
+
+        foreach (var product in Products)
+        {
+            amount += product.Quantity;
+        }
+
+        return amount;
     }
 
     public string PrintAmount()
     {
-        throw new NotImplementedException();
+        var details = string.Empty;
+        
+        foreach (var product in Products)
+        {
+            details += $"{product.Name} {product.Quantity} {UnitType} \n";
+        }
+
+        return details;
     }
 }

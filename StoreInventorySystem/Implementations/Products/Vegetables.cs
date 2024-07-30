@@ -8,8 +8,8 @@ public class Vegetables : Product
     {
     }
 
-    public int CountAmount()
+    string CountAmount()
     {
-        return Quantity;
+        return $"{Quantity} kgs";
     }
 }
