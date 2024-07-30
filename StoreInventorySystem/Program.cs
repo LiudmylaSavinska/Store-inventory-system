@@ -4,25 +4,34 @@ using StoreInventorySystem.Implementations.Store;
 var loginService = new LogInService();
 var store = new Store();
 
-Console.WriteLine("Welcome to the Store Inventory System" +
-                  "Enter your choice: \n Log in, \n Sign in, \n Leave\"");
+Console.WriteLine("Welcome to the Store Inventory System");
 
 var systemRunning = true;
 while (systemRunning)
 {
+    Console.WriteLine("Enter your choice: \n 1. Log in, \n 2. Sign in, \n 3. Leave");
+    
     var userOption = Console.ReadLine();
 
     switch (userOption)
     {
-        case "Log in":
-            loginService.LogIn();
+        case "1":
+            if (loginService.LogIn())
+            {
+                ShowStoreMenu();
+            }
+
             break;
 
-        case "Sign in":
-            loginService.SignIn();
+        case "2":
+            if (loginService.SignIn())
+            {
+                ShowStoreMenu();
+            }
+
             break;
 
-        case "Leave":
+        case "3":
             Console.WriteLine("Have a nice day, bye!");
             systemRunning = false;
             break;
@@ -36,14 +45,16 @@ while (systemRunning)
 void ShowStoreMenu()
 {
     var inStore = true;
-    var menuOption = string.Empty;
     
-    Console.WriteLine("You are in!" +
-                      "Enter your choice: \n 1. Add product, \n 2. Remove product, \n 3. Get full list," + 
-                      "\n 4. Get section list \n 5. Log Out");
-
+    Console.WriteLine("You are in!");
+    
+    
     while (inStore)
     {
+        Console.WriteLine("Enter your choice: \n 1. Add product, \n 2. Remove product, \n 3. Get full list," + 
+                          "\n 4. Get section list \n 5. Log Out");
+        var menuOption = Console.ReadLine();
+        
         switch (menuOption)
         {
             case "1":
@@ -77,8 +88,9 @@ void ShowStoreMenu()
                 break;
 
             case "4":
+                Console.WriteLine("Please enter section name");
                 string sectionToView = Console.ReadLine();
-                store.GetSectionList(sectionToView);
+                Console.WriteLine(store.GetSectionList(sectionToView));
                 break;
             
             case "5":

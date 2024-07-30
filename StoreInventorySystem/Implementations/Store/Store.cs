@@ -12,7 +12,6 @@ public class Store
     {
         StoreSections = new List<ICountable>();
         Seed();
-        GetFullList();
     }
     
     public List<ICountable> StoreSections { get; set; }
@@ -92,7 +91,7 @@ public class Store
         }
     }
 
-    public void GetSectionList(string sectionName)
+    public string GetSectionList(string sectionName)
     {
         var storeSection = StoreSections.FirstOrDefault(ss => ss.SectionName == sectionName);
 
@@ -101,7 +100,7 @@ public class Store
             Console.WriteLine("The section is not found");
         }
         
-        storeSection.PrintAmount();
+        return storeSection.PrintAmount();
     }
 
     private void Seed()
@@ -141,6 +140,10 @@ public class Store
         vegetablesStoreSection.Products.Add(new Beverage("cabbage", 11, 130));
         vegetablesStoreSection.Products.Add(new Beverage("onion", 220, 150));
         
+        StoreSections.Add(beverageStoreSection);
+        StoreSections.Add(fishStoreSection);
+        StoreSections.Add(meatStoreSection);
+        StoreSections.Add(milkStoreSection);
         StoreSections.Add(vegetablesStoreSection);
         
     }
