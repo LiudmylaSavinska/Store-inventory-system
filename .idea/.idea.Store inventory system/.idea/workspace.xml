@@ -8,25 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c1e02cd-25e6-4cd8-a6b4-0e5bc8ab2058" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Store inventory system/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Contracts/ICountable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Products/Base/Products.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Products/Beverage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Products/Fish.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Products/Meat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Products/Milk.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Products/Vegetables.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/Store.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/StoreSections/BeverageStoreSection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/StoreSections/FishStoreSection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/StoreSections/MeatStoreSection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/StoreSections/MilkStoreSection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/StoreSections/VegetablesStoreSection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/LogInMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StoreInventorySystem/StoreInventorySystem.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Store inventory system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Store inventory system/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/Store.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/Store.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreInventorySystem/LogInService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StoreInventorySystem/LogInService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreInventorySystem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StoreInventorySystem/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +20,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -100,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722186954697</updated>
       <workItem from="1722186955974" duration="454000" />
-      <workItem from="1722187460320" duration="11959000" />
+      <workItem from="1722187460320" duration="23621000" />
     </task>
     <servers />
   </component>
@@ -109,5 +101,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/Store.cs</url>
+          <line>94</line>
+          <properties documentPath="$PROJECT_DIR$/StoreInventorySystem/Implementations/Store/Store.cs" initialLine="94" containingFunctionPresentation="Method 'GetSectionList'">
+            <startOffsets>
+              <option value="2866" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2867" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
