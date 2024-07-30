@@ -20,14 +20,7 @@ public class VegetablesStoreSection : ICountable
 
     public int CountAmount()
     {
-        var amount = 0;
-
-        foreach (var product in Products)
-        {
-            amount += product.Quantity;
-        }
-
-        return amount;
+        return Products.Sum(product => product.Quantity);
     }
 
     public string PrintAmount()

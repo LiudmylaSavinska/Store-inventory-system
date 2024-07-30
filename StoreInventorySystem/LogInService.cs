@@ -1,35 +1,15 @@
-namespace StoreInventorySystem.Implementations;
+namespace StoreInventorySystem;
 
-public class LogInMenu
+public class LogInService
 {
-   public void ShowMenu()
+   private Dictionary<string, string> userAccounts;
+
+   public LogInService()
    {
-      Console.WriteLine("Welcome to the Store Inventory System" +
-                        "Enter your choice: \n Log in, \n Sign in, \n Leave\"");
-      
-      var userOption = Console.ReadLine();
-      
-      switch (userOption)
-      {
-         case "Log in":
-            LogIn();
-            break;
-
-         case "Sign in":
-            SignIn();
-            break;
-
-         case "Leave":
-            Console.WriteLine("Have a nice day, bye!");
-            break;
-
-         default:
-            Console.WriteLine("Please, select a valid option");
-            break;
-      }
+      userAccounts = new Dictionary<string, string>();
    }
    
-   Dictionary<string, string> userAccounts = new Dictionary<string, string>();
+   
    
    public void SignIn()
    {
@@ -66,7 +46,7 @@ public class LogInMenu
          Console.WriteLine("Please, enter your password");
          var userPassword = Console.ReadLine();
          
-         if (userAccounts[userNickname] == userAccounts[userPassword])
+         if (userAccounts[userNickname] == userPassword)
          {
             Console.WriteLine("You have successfully logged in!");
             correctCredentials = true;
